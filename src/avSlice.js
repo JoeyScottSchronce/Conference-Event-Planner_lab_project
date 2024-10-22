@@ -11,7 +11,7 @@ export const avSlice = createSlice({
         },
         {
             img: "https://cdn.pixabay.com/photo/2018/10/14/22/07/speakers-3747617_1280.jpg",
-            name: "Speaker",
+            name: "Speakers",
             cost: 35,
             quantity: 0,
         },
