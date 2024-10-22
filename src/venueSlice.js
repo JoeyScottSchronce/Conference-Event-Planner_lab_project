@@ -5,7 +5,7 @@ export const venueSlice = createSlice({
   name: "venue",
   initialState: [
     {
-      img: "https://pixabay.com/images/download/chairs-2181916_640.jpg",
+      img: "Conference-Event-Planner_lab_project/src/assets/images/conference_room.jpg",
       name: "Conference Room (Capacity:15)",
       cost: 3500,
       quantity: 0,
@@ -34,15 +34,16 @@ export const venueSlice = createSlice({
       cost: 1100,
       quantity: 0,
     },
-  
+
   ],
   reducers: {
-   
+
     incrementQuantity: (state, action) => {
       const { payload: index } = action;
       if (state[index]) {
         if (state[index].name === " Auditorium Hall (Capacity:200)" && state[index].quantity >= 3) {
-          return;        }
+          return;
+        }
         state[index].quantity++;
       }
     },
